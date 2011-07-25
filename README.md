@@ -11,5 +11,5 @@ Maintenance:
 Update CSS for this plugin using:
 
     src='fancybox/([a-z_-]+).png' -> src=image_path('fancybox/$1.png')
-    url\('([a-z_-]+).png'\)       -> image_url('fancybox/$1.png')
-    url\('([a-z_-]+).gif'\)       -> image_url('fancybox/$1.gif')
+    url\('([a-z_-]+).png'\)       -> image_url("fancybox/$1.png")
+    url\('([a-z_-]+).gif'\)       -> image_url("fancybox/$1.gif")
