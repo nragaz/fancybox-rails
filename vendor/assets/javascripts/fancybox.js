@@ -1036,7 +1036,7 @@
 		if ($("#fancybox-wrap").length) {
 			return;
 		}
-
+    
 		$('body').append(
 			tmp	= $('<div id="fancybox-tmp"></div>'),
 			loading	= $('<div id="fancybox-loading"><div></div></div>'),
