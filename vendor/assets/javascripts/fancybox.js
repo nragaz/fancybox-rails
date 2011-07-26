@@ -15,7 +15,7 @@
  *   http://www.gnu.org/licenses/gpl.html
  */
 
-;(function($) {
+(function($) {
 	var tmp, loading, overlay, wrap, outer, content, close, title, nav_left, nav_right,
 
 		selectedIndex = 0, selectedOpts = {}, selectedArray = [], currentIndex = 0, currentOpts = {}, currentArray = [],
@@ -373,7 +373,7 @@
 			if (wrap.is(":visible")) {
 				$( close.add( nav_left ).add( nav_right ) ).hide();
 
-				pos = wrap.position(),
+				pos = wrap.position();
 
 				start_pos = {
 					top	 : pos.top,
@@ -943,7 +943,7 @@
 		$(window).unbind("resize.fb scroll.fb");
 		$(document).unbind('keydown.fb');
 
-		content.find('iframe').attr('src', isIE6 && /^https/i.test(window.location.href || '') ? 'javascript:void(false)' : 'about:blank');
+		content.find('iframe').attr('src', isIE6 && (/^https/i).test(window.location.href || '') ? 'javascript:void(false)' : 'about:blank');
 
 		if (currentOpts.titlePosition !== 'inside') {
 			title.empty();
